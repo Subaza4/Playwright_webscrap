@@ -1,0 +1,29 @@
+# Node / Bun
+node_modules/
+bun.lockb
+
+# TypeScript
+dist/
+*.tsbuildinfo
+
+# Playwright
+/playwright/.local-browsers/
+/home/*/.cache/ms-playwright/
+
+# Logs
+npm-debug.log*
+bun-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
