@@ -20,3 +20,13 @@ export PATH="/root/.bun/bin:$PATH"
 source ~/.bashrc
 bun --version
 
+
+Para realizar pruebas copiar esta petición en InsomniaREST
+curl --request POST \
+  --url http://127.0.0.1:3000/fetch-html \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/12.3.0' \
+  --data '{
+  "url": "https://www.zenrows.com/blog/bypass-cloudflare#cloudflare-passive-bot-detection"
+}
+'
