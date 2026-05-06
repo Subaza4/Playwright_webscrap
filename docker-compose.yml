@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.59.1-noble
+    container_name: websc
+    ports:
+      - "3000:3000"
+    
+    volumes:
+      - ./:/usr/src/app
+    
+    working_dir: /usr/src/app
+    
+    command: sh -c "npm install && npm start"
+    
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 512M
