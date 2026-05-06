@@ -1,12 +1,18 @@
 {
-  "name": "playwright-service",
+  "name": "playwright_image",
   "version": "1.0.0",
-  "type": "module",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "bun run src/index.ts",
-    "start": "bun run src/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
   "dependencies": {
-    "playwright": "^1.41.2"
+    "p-limit": "^7.3.0",
+    "playwright": "^1.59.1"
   }
 }
